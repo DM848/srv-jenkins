@@ -1,2 +1,2 @@
-# template-srv-golang
-template repository for golang based services
+# srv-{{ service.name }}
+{{ service.description }}
