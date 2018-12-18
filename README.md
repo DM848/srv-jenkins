@@ -1,2 +1,2 @@
-# srv-{{ service.name }}
-{{ service.description }}
+# srv-jenkins
+Jenkins as a service
