@@ -3,13 +3,15 @@
   jobs: [
     {
       name: "jenkins",
-      exec: "/server/webserver",
       port: 8080,
       health: {
-        exec: "/usr/bin/curl -o /dev/null --fail -s http://localhost:8080/health",
-        interval: 3,
+        exec: "/usr/bin/curl -o /dev/null --fail -s http://localhost:8080/login",
+        interval: 10,
         ttl: 10
-      }
+      },
+      tags: [
+        "platform-endpoint"
+      ]
     }
   ]
 }

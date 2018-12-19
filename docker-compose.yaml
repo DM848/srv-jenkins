@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+
+  jenkins:
+    build: .
+    image: dm848/srv-jenkins:v1
